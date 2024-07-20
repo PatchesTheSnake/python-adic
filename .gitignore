@@ -1,0 +1,6 @@
+scripts/
+.eggs/
+build/
+lib/
+include/
+adic_python.egg-info/
