@@ -44,5 +44,10 @@ class p_adic():
         if isinstance(value,int) and value>-1:
             self.rep_value="0"
             self.end_value=str(self.adj_value)
-        else:
-            pass
+        elif isinstance(value,int):
+            self.rep_value="9"
+            self.end_value=str(int("1"+"0"*len(str(abs(value))))-abs(value))
+    def __str__(self):
+        return "..."+self.rep_value*5+self.end_value
+    def __repr__(self):
+        self.__str__()
